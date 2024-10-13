@@ -11,6 +11,7 @@ function App() {
     {
       path: '/',
       element: <><Navbar/><Main /></>,
+
       errorElement: <Error/>
     }
   ])
@@ -18,7 +19,11 @@ function App() {
   return (
 
     <div className="bg-gray-800 w-full min-h-screen">
-        <RouterProvider router={router}/>
+
+
+      <RouterProvider router={router}/>
+ 
+
     </div>
   )
 }

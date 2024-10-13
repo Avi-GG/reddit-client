@@ -3,12 +3,14 @@ import { useState } from 'react'
 
 const Main = () => {
     const [isOpen, setIsOpen] = useState(false);
+
     const showPop =()=>{
         setIsOpen(true);
     }
     const closePop =()=>{
         setIsOpen(false);
     }
+
   return (
     <div className='min-h-screen w-full relative'>
        <button className='rounded-[50%] h-12 w-12 bg-lime-400' onClick={showPop} >
